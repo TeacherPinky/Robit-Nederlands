@@ -228,9 +228,8 @@ namespace robit {
      * @param degree [0-180] degree of servo; eg: 0, 90, 180
     */
     //% blockId=robit_servo block="zet servo|%index| op hoek van %degree graden"
-    //% weight=99
-    //% advanced=true
-    //% blockGap=50
+    //% weight=5
+     //% blockGap=50
     //% degree.min=0 degree.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Servo(index: Servos, degree: number): void {
