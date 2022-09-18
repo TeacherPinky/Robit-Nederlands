@@ -228,7 +228,7 @@ namespace robit {
      * @param degree [0-180] degree of servo; eg: 0, 90, 180
     */
     //% blockId=robit_servo block="Zet servo|%index| op hoek van %degree graden"
-    //% weight=100
+    //% weight=99
     //% advanced=true
     //% blockGap=50
     //% degree.min=0 degree.max=180
@@ -270,9 +270,9 @@ namespace robit {
     }
 
 
-    //单个电机速度
+    //**
     //% blockId=robit_motor_run block="Laat motor %index draaien met snelheid %speed "
-    //% weight=85
+    //% weight=100
     //% speed.min=-100 speed.max=100
     //% advanced=true
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
