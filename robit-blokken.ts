@@ -271,10 +271,9 @@ namespace robit {
 
 
     //**
-    //% blockId=robit_motor_run block="Laat motor %index draaien met snelheid %speed "
+    //% blockId=robit_motor_run block="Laat motor %index draaien met snelheid %speed"
     //% weight=100
     //% speed.min=-100 speed.max=100
-    //% advanced=true
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function MotorRun(index: Motors, speed: number): void {
         if (!initialized) {
