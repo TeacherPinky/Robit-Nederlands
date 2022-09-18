@@ -306,7 +306,7 @@ namespace robit {
      * @param motor_right describe parameter here, eg: 2
      * @param speed2 [-100-100] speed of motor; eg: 50
     */
-    //% blockId=robit_motor_dual block="laat linkerwiel %motor1|draaien met snelheid %speed1|laat rechterwiel %motor2|draaien met snelheid %speed2"
+    //% blockId=robit_motor_dual block="laat linkerwiel %motor1 draaien met snelheid %speed1|laat rechterwiel %motor2 draaien met snelheid %speed2"
     //% weight=84
     //% speed1.min=-100 speed1.max=100
     //% speed2.min=-100 speed2.max=100
