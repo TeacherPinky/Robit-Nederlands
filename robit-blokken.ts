@@ -227,7 +227,7 @@ namespace robit {
      * @param index Servo Channel; eg: S1
      * @param degree [0-180] degree of servo; eg: 0, 90, 180
     */
-    //% blockId=robit_servo block="Zet servo|%index| op hoek van %degree graden"
+    //% blockId=robit_servo block="zet servo|%index| op hoek van %degree graden"
     //% weight=99
     //% advanced=true
     //% blockGap=50
@@ -245,7 +245,7 @@ namespace robit {
 
 
     //步进电机旋转度数
-    //% blockId=robit_stepper_degree block="Zet stappenmotor 28BYJ-48|%index| op %degree graden"
+    //% blockId=robit_stepper_degree block="zet stappenmotor 28BYJ-48|%index| op %degree graden"
     //% weight=90
     //% advanced=true
     export function StepperDegree(index: Steppers, degree: number): void {
@@ -261,7 +261,7 @@ namespace robit {
 
 
     //步进电机圈数
-    //% blockId=robit_stepper_turn block="Laat stappenmotor 28BYJ-48|%index|draaien met snelheid %turn"
+    //% blockId=robit_stepper_turn block="laat stappenmotor 28BYJ-48|%index|draaien met snelheid %turn"
     //% weight=90
     //% advanced=true
     export function StepperTurn(index: Steppers, turn: Turns): void {
@@ -271,7 +271,7 @@ namespace robit {
 
 
     //**
-    //% blockId=robit_motor_run block="Laat motor %index draaien met snelheid %speed"
+    //% blockId=robit_motor_run block="laat motor %index draaien met snelheid %speed"
     //% weight=100
     //% speed.min=-100 speed.max=100
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -307,7 +307,7 @@ namespace robit {
      * @param motor_right describe parameter here, eg: 2
      * @param speed2 [-100-100] speed of motor; eg: 50
     */
-    //% blockId=robit_motor_dual block="Linkerwiel %motor1|snelheid %speed1|Rechterwiel %motor2|snelheid %speed2"
+    //% blockId=robit_motor_dual block="laat linkerwiel %motor1|draaien met snelheid %speed1|laat rechterwiel %motor2|draaien met snelheid %speed2"
     //% weight=84
     //% speed1.min=-100 speed1.max=100
     //% speed2.min=-100 speed2.max=100
@@ -321,16 +321,16 @@ namespace robit {
 
 
 
-    //% blockId=robit_stop block="Laat motor |%index| stoppen"
-    //% weight=80
+    //% blockId=robit_stop block="laat motor |%index| stoppen"
+    //% weight=99
     export function MotorStop(index: Motors): void {
         MotorRun(index, 0);
     }
 
 
 
-    //% blockId=robit_stop_all block="Laat elke motor stoppen"
-    //% weight=79
+    //% blockId=robit_stop_all block="laat elke motor stoppen"
+    //% weight=98
     //% blockGap=50
     export function MotorStopAll(): void {
         for (let idx = 1; idx <= 4; idx++) {
@@ -345,7 +345,7 @@ namespace robit {
      * get Ultrasonic
      * @param jpin, eg: 3
     */
-    //% blockId=robit_ultrasonic block="Ultrasone sensor|pin %pin"
+    //% blockId=robit_ultrasonic block="meet afstand met ultrasone sensor op|pin %pin"
     //% weight=10
     export function Ultrasonic(jpin: Jpin): number {
         let pin = DigitalPin.P2
@@ -374,7 +374,7 @@ namespace robit {
     }
 
     //makeblock_touch_sensor
-    //% blockId=Touch_sensor_is_touched block="Aanraaksensor wordt aangeraakt|pin %pin"
+    //% blockId=Touch_sensor_is_touched block="aanraaksensor wordt aangeraakt|pin %pin"
     //% advanced=true
     //% weight=10
     export function Touch_sensor_is_touched(jpin: Jpin): boolean {
@@ -399,7 +399,7 @@ namespace robit {
     }
 
     //makeblock_led
-    //% blockId=makeblock_led block="Zet LED |pin %pin| %Ledsta"
+    //% blockId=makeblock_led block="zet LED |pin %pin| %Ledsta"
     //% weight=10
     //% advanced=true
     export function set_makeblock_led(jpin: Jpin, sta: ledsta): void {
@@ -492,7 +492,7 @@ namespace robit {
     /**
      * line follow left
     */
-    //% blockId=robit_left_line_follow block="digitale waarde linkerkant lijnvolgsensor"
+    //% blockId=robit_left_line_follow block="linkerkant lijnvolgsensor"
     //% weight=10
     export function left_line_follow(): number {
         let i = 0
@@ -506,7 +506,7 @@ namespace robit {
     /**
      * right follow right
     */
-    //% blockId=robit_right_line_follow block="digitale waarde rechterkant lijnvolgsensor"
+    //% blockId=robit_right_line_follow block="rechterkant lijnvolgsensor"
     //% weight=10
     export function right_line_follow(): number {
         let i = 0
